@@ -1,0 +1,63 @@
+.messageBox, .engagefulElementAnnouncement-bar, .engagefulModalBox {
+    position: absolute !important;
+    z-index: 999999;
+}
+
+#dashboard-inline {
+    height: 100%;
+    position: relative;
+    background: #f5f5f5;
+width: 100%;    
+    pointer-events: none;
+    border-radius: 6px;
+}
+
+.actionEditorLabel {
+    margin: unset;
+    font-size: "14px";
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    color: #717171;
+}
+
+.actionEditorHr {
+    margin-top: 25px;
+    border-top: 1px solid #eaeaea;
+}
+
+.diContainer {
+    min-height: 650px;
+        display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.diContainerFull {
+    margin-left: auto;
+    min-height: 80px;
+    height: 560px;
+    position: relative;
+    background: #f5f5f5;
+    width: 100%;
+    border-radius: 6px;
+        display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.engagefulModalBox {
+    width: 600px;
+    margin: auto;
+}
+
+#dashboard-inline .cardImage {
+    position: absolute !important;
+}
+
+.Engageful-Tooltip {
+    opacity: 1 !important;
+}

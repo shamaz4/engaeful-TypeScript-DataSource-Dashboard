@@ -1,0 +1,57 @@
+.gridjs-wrapper {
+    box-shadow: unset;
+    padding: 0px;
+    border-radius:0px;
+}
+
+.gridjs-footer{
+    box-shadow: unset;
+}
+th.gridjs-th, td.gridjs-td {
+    line-height: 24px;
+padding: 8px 12px 8px 20px;
+    border-left: none;
+    border-right: none;
+}
+th.gridjs-th {
+
+    color: #525252;
+    background: unset;
+}
+
+.gridjs-container {
+}
+
+.gridjscontainer {
+    margin-left: -22px;
+    margin-right: -22px;
+} 
+
+table.gridjs-table {
+    width: 100%;
+}
+
+.gridjs-footer {
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top: 0px;
+}
+
+
+
+th.gridjs-th-sort:focus,
+th.gridjs-th-sort:hover {
+    background-color: #f5f4ff;
+}
+
+.gridjs-tr:hover > td {
+    background: #f5f4ff;
+}
+
+.gridjs-search {
+    display:none;
+}
+
+.listName:hover {
+    text-decoration: underline;
+}

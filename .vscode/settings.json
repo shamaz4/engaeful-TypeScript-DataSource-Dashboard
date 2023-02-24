@@ -1,0 +1,50 @@
+{
+    "files.exclude": {
+        ".git/": true,
+        "node_modules/": false,
+        "public/": false
+    },
+    "search.exclude": {
+        "**/.cache": true,
+        "**/node_modules": true,
+        "**/public": true
+    },
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
+    "editor.tabSize": 4,
+    "eslint.validate": [
+        {
+            "language": "javascript",
+            "autoFix": true
+        },
+        {
+            "language": "javascriptreact",
+            "autoFix": true
+        },
+        {
+            "language": "typescript",
+            "autoFix": true
+        },
+        {
+            "language": "typescriptreact",
+            "autoFix": true
+        }
+    ],
+    "tslint.enable": false,
+    "typescript.tsdk": "./node_modules/typescript/lib",
+    "debug.node.autoAttach": "on",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "editor.formatOnSave": false,
+    "javascript.format.enable": false,
+    "eslint.alwaysShowStatus": true,
+    "eslint.options": {
+        "extensions": [
+            ".html",
+            ".js",
+            ".vue",
+            ".jsx"
+        ]
+    },
+}

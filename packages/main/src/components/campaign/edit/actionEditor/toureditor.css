@@ -1,0 +1,123 @@
+.tourNavigationContainer {
+    overflow-x: auto;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 30px
+}
+
+.tourNavigationContainer::-webkit-scrollbar {
+    width: 2px;
+    height: 7px;
+  }
+  
+  /* Track */
+.tourNavigationContainer::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+  }
+  
+  /* Handle */
+.tourNavigationContainer::-webkit-scrollbar-thumb {
+    background: rgb(172, 172, 172);
+    border-radius: 4px;
+  }
+  
+  /* Handle on hover */
+.tourNavigationContainer::-webkit-scrollbar-thumb:hover {
+    background: rgb(145, 145, 145);
+  }
+
+
+.tourBlock {
+    cursor: pointer;
+    min-width: 150px;
+    max-width: 150px;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    align-items: center;
+    border: 1px solid rgb(239, 239, 239);
+}
+
+.tourBlock:hover {
+}
+
+.tourBlock.active {
+    box-shadow: 0px 0px 2px 2px #9385fc6b;
+}
+
+.blockInput {
+    display: block;
+    cursor: text;
+    outline: none !important;
+    transition: none;
+    border: 1px solid transparent ;
+}
+
+.blockInput:hover, .blockInput:focus {
+border: 1px solid #e1e1e1 !important
+}
+
+#engageful-attachTo {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    background:#ebebeb;
+    border-radius: 50%;
+    margin-left: 33%
+}
+
+#engageful-attachTo.top,
+#engageful-attachTo.top-start,
+#engageful-attachTo.top-end {
+  margin-top: 42%
+}
+
+#engageful-attachTo.left {
+  margin-left: 61%
+}
+
+#engageful-attachTo.left-start {
+  margin-left: 61%;
+  margin-bottom: 42%;
+}
+#engageful-attachTo.left-end {
+  margin-left: 61%;
+  margin-top: 42%;
+}
+
+#engageful-attachTo.bottom,
+#engageful-attachTo.bottom-start,
+#engageful-attachTo.bottom-end {
+  margin-bottom: 42%
+}
+
+#engageful-attachTo.right {
+  margin-right: 58%;
+  margin-left: 1%;
+}
+
+#engageful-attachTo.right-start {
+  margin-right: 58%;
+  margin-bottom: 42%;
+  margin-left: 1%;
+}
+#engageful-attachTo.right-end {
+  margin-right: 58%;
+  margin-left: 1%;
+  margin-top: 42%;
+}
+
+.addNewTourBlockSymbol{
+  transition: all ease-in-out 0.2s ;
+}
+.addNewTourBlockSymbol:hover {
+  box-shadow: 0px 0px 2px 2px #a69bfda1 !important
+}

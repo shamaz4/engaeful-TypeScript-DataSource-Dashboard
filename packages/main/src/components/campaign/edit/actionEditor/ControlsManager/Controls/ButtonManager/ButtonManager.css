@@ -1,0 +1,82 @@
+.addButtonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+}
+.addButtonText {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 5px !important;
+    margin-right: 5px;
+    color: #9385fc;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.addButtonText svg {
+    width:16px;
+    margin-right: 5px;
+}
+
+
+.noButtonsAdded {
+    color: #9f9f9f;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.buttonItemUnedit {
+    /* white-space: nowrap;text-overflow: ellipsis;overflow: hidden; */
+    background: white; 
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    cursor: default;
+}
+
+.buttonItemUnedit:hover {
+}
+
+.buttonItemUnedit .editText {
+    font-weight: 500;
+    color: #9385fc;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.callToActions {
+    display: flex;
+    margin-left: auto;
+}
+
+
+.callToActions .secondary {
+    cursor: pointer;
+    background: unset;
+    color: unset;
+    padding: 5px 12px;
+    margin-right: 10px;
+}
+
+.callToActions .secondary:hover {
+    color: #9385fc;
+}
+
+.callToActions .primary {
+    cursor: pointer;
+    padding: 5px 12px;
+    background: #9385fc;
+    border-radius: 4px;
+    color: white;
+
+}
+
+.moveUpOrDown svg {
+    cursor: pointer;
+}
+.moveUpOrDown svg:hover {
+
+    color: #9385fc;
+}

@@ -1,0 +1,376 @@
+.predicateSelectorContainer  {
+    line-height: unset !important;
+    display: inline-block;
+}
+
+.textAligned {
+    /* position: relative;
+    top: 1px;
+    line-height: 22px; */
+}
+
+.predicateSelectorContainer .addPredicate {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 6px 10px;
+    transition: all 0.2s ease-in-out;
+    font-weight: 500;
+}
+
+.predicateSelectorContainer .addPredicate:hover {
+    background: #f3f1ff;
+    color: #6e61d4;
+}
+
+.predicateSelectorContainer .addPredicate.active {
+    color: #6e61d4 !important;
+        background: #f3f1ff !important;
+box-shadow: 0px 0px 0px 3px rgb(110 97 212 / 42%) !important;
+}
+
+
+.predicateSelectorContainer .addPredicate svg 
+{
+    margin-right: 5px;
+        width: 14px;
+    height: 14px;
+}
+
+.predicateSelectorContainer .addPredicate.selected {
+    /*background: #f3f1ff;*/
+    /*color: #6e61d4;*/
+    background: #efefef;
+    box-shadow: 0px 0px 0px 1px #6e61d400;
+}
+
+.predicateSelector {
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px 1px rgb(0 0 0 / 8%);
+    position: relative;
+    background: white;
+    margin-top: 10px;
+        z-index: 9999999;
+}
+
+.predicateSelectorSearchBar{
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    background: #f5f5f5;
+    border: 1px solid #e7e7e7;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+    color: #4e4e4e;
+}
+
+.predicateSelectorSearchBar:disabled{
+    background: #d8d8d8
+}
+
+.predicateSelectorContainer .predicateSelector .predicateSelectorSearchBarContainer {
+    padding: 12px 8px;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.predicateSelectorSearchBar:not(:disabled):hover {
+    border: 1px solid rgb(110 97 212 / 36%);
+}
+.predicateSelectorSearchBar:not(:disabled):focus , .predicateSelectorSearchBar:not(:disabled):active {
+    outline: none;
+    box-shadow: 0px 0px 0px 3px rgb(110 97 212 / 42%) !important;
+    background-color: white !important;
+}
+
+.predicateSelectorSearchBar.isFocused {
+    outline: none;
+    box-shadow: 0px 0px 0px 3px rgb(110 97 212 / 42%) !important;
+    background-color: white !important;
+}
+
+
+.predicateSelector .predicateSelectorItemsContainer
+{
+    padding: 8px;
+}
+
+.predicateSelector .predicateSelectorItemsContainer .categoryName{
+    font-size: 13px;
+    font-family: monospace;
+    color: gray;
+    display: block;
+    margin: 5px 10px;
+}
+
+.predicateSelector .predicateSelectorItem {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+        font-weight:500;
+}
+.predicateSelector.noWidthLimit .predicateSelectorItem span {
+    max-width: 100%  !important;
+}
+.predicateSelector .predicateSelectorItem span {
+        max-width: 190px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.predicateSelector .predicateSelectorItem.selectedMulti {
+    background-repeat: no-repeat !important;
+    background-size: 18px !important;
+    background-position: 96% 12px !important;
+}
+
+.predicateSelector .predicateSelectorItem.selected {
+    background-color: #9487ff;
+    color:white;
+    cursor: default;
+}
+.predicateSelector .predicateSelectorItem.selected:hover {
+
+    background-color: #9487ff;
+    color:white;
+}
+.predicateSelectorContainer .predicateSelector .predicateSelectorItem.selected:hover svg{
+    color:white;
+}
+.predicateSelectorContainer .predicateSelector .predicateSelectorItem.selected svg {
+    color: white;
+}
+
+.predicateSelector .predicateSelectorItem:hover {
+        background: #f5f5f5;
+        color: #6e61d4;
+        font-weight:500;
+}
+
+.predicateSelectorContainer .predicateSelector .predicateSelectorItem:hover svg {
+
+        color: #6e61d4;
+}
+
+.predicateSelectorContainer .predicateSelector .predicateSelectorItem svg {
+        font-size: 18px;
+    margin-right: 5px;
+    color: #6d6b6b;
+}
+
+
+
+.predicateSelectorContainer .predicateSelector .predicateSelectorItem .operatorIcon {
+    color: #333333;
+    border-radius: 4px;
+    width: 16px;
+    height: 18px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    FONT-WEIGHT: 400;
+    font-family: monospace;
+    font-size: 16px;
+    margin-right: 7px;
+}
+
+.predicateSelectorContainer .predicateSelector .predicateSelectorItem:hover .operatorIcon {
+    color: #6e61d4;
+}
+
+
+.predicateSelectorContainer .addPredicate.deleteButton, .predicateSelectorContainer .addPredicate.moreActionsButton 
+{
+    height: 35px;
+margin-left: 7px;
+}
+.predicateSelectorContainer .addPredicate.deleteButton:hover 
+{
+color: #f75353; background: #ffeaea7a; 
+}
+.predicateSelectorContainer .addPredicate.moreActionsButton:hover{
+color: #6e61d4; 
+} 
+
+.predicateSelectorContainer .predicateSelector .predicateSelectorItem .checkBox svg {
+    margin-right:0px;
+}
+
+.predicateSelectorContainer .predicateSelector .predicateSelectorItem.inputItemSelected {
+    color: #6e61d4;
+    font-weight: 500;
+}
+
+.predicateSelectorContainer .predicateSelector .predicateSelectorItem.inputItemSelected  svg {
+   color:#6e61d4; 
+}
+
+ .addValueButton {
+    position: absolute;
+    width: 100%;
+    bottom: -20px;
+    padding: 10px;
+    text-align: center;
+    background: #9a8fef;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 0px 0px 12px 12px;
+    cursor: pointer;
+}
+
+.predicateSelectorContainer .hasTotalContainer {
+        display: flex;
+    align-content: center;
+    align-items: center;
+    padding:10px;
+    font-size:14px;
+}
+
+.predicateSelectorContainer .hasTotalContainer input{
+
+    margin-left: 8px;
+    margin-right: 8px;
+    min-width:42px;
+    text-align: center;
+}
+
+.predicateSelectorSelect {
+        box-sizing: border-box;
+    padding: 10px;
+    background: #f5f5f5;
+    border: 1px solid #e7e7e7;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+    color: #4e4e4e;
+    cursor: pointer;
+    font-size:14px;
+}
+
+.predicateSelectorSelect.selected {
+    outline: none;
+    box-shadow: 0px 0px 0px 3px rgb(110 97 212 / 42%) !important;
+    background: #fff !important;
+}
+
+.MuiAccordion-root:before {
+  display: none;
+}
+
+.inlineFilterLine {
+        height: 26px;
+    width: 4px;
+    background: #dddddd;
+    margin-left: 70px;
+    display: inline-block;
+    position: relative;
+    /* top: 6px; */
+    margin-right: 15px; 
+}
+
+.inlineFilterWhereText {
+    display: inline-block;
+    position: relative;
+    /* top: -2px;   */
+    margin-right: 20px;
+    font-weight: 500;
+}
+
+.andOrButtonSelector {
+    width: 28px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    margin-right: 30px;
+    margin-left:10px;
+    font-weight: 500;
+    cursor:pointer;
+}
+.andOrButtonSelector:hover {
+        color: #6e61d4;
+}
+
+.selectSimple:hover {
+    color: #6e61d4;
+}
+
+.predicateSelectorItemsContainer svg {
+   color:#6e61d4; 
+}
+
+.MuiButtonBase-root:hover:active::after {
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    display: block;
+    /* opacity: 0.3; */
+    position: absolute;
+    border-radius: inherit;
+    background-color: hsl(247deg 75% 75% / 3%) !important;
+}
+
+
+.sideBarNodeNameInput {
+    font-size:15px;
+    border: 0px;
+    border-bottom: 1px dashed transparent;
+    padding: 0px;
+    padding-left: 2px;
+    width: 400px;
+    transition: all 0.2s ease-in-out;
+}
+.sideBarNodeNameInput:hover {
+        border-bottom: 1px dashed #cccccc;
+}
+
+.popperContainer {
+    z-index:9999999;
+}
+
+div[data-popper-placement="top"]:not(.Engageful-Tooltip) {
+    bottom: 37px !important;
+}
+div[data-popper-placement="bottom"]:not(.Engageful-Tooltip) {
+    top: -10px !important;
+}
+
+.onTrackspan {
+    background: rgb(11, 192, 120); color: white; padding: 3px; font-weight: 500; border-radius: 4px; margin-right: 10px;
+    margin-left:10px;
+    font-size:13px;
+}
+
+.behindSpan {
+    margin-left:10px;
+    font-size:13px;
+    background: rgb(252, 199, 82); color: white; padding: 3px; font-weight: 500; border-radius: 4px; margin-right: 10px;
+}
+
+.stuckSpan {
+    font-size:13px;
+    background: rgb(238, 87, 82);
+    color: white;
+    padding: 3px;
+    font-weight: 500;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.predicateSelectorContainer .addPredicate.selected:focus {
+color: #6e61d4 !important;
+    background: #f3f1ff !important;
+    box-shadow: 0px 0px 0px 3px rgb(110 97 212 / 42%) !important;
+}

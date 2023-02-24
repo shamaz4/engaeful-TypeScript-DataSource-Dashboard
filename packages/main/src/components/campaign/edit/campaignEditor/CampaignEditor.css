@@ -1,0 +1,397 @@
+html {
+  height: 100%;
+}
+body {
+  overflow-x: hidden;
+}
+
+.reactflow-wrapper {
+  margin-top: 60px;
+    height: calc(100vh - 60px);
+}
+
+.react-flow {
+font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+min-height: 750px;
+}
+
+.react-flow__node {
+      background: white;
+    border: 1px solid rgb(230 230 230);
+        border-radius: 4px;
+  padding: 20px 20px !important;
+  min-width:300px;
+  max-width:300px;
+  transition: box-shadow 0.2s ease-in-out;
+  min-height: 80px;
+}
+
+.react-flow__node.selected {
+    box-shadow: #9385fc2e 0px 0px 0px 4px;
+    border: 1px solid #9385fc;
+}
+
+.react-flow__handle {
+  transition: all 0.2s ease-in-out;
+    position: absolute;
+    pointer-events: none;
+    border-radius: 100%;
+    background: #fff;
+    width: 12px;
+    border: 0px;
+    box-shadow: 0px 0px 0px 4px rgb(143 146 239 / 38%);
+  height: 12px;
+    cursor:pointer !important;
+}
+.react-flow__handle:hover {
+    box-shadow: 0px 0px 0px 6px rgb(143 146 239 / 38%);
+}
+.react-flow__handle-right {
+    right: -7px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.react-flow__handle-left {
+    left: -7px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.NodeIcon {
+    width: 24px;
+    display: inline-block;
+    height: 24px;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+
+.NodeIcon.delay {
+  background: #d4d0f6;
+    color: #9385fc;
+}
+
+.typeName {
+    font-weight:500;
+}
+
+.NodeRules {
+      margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 28px;
+    font-size: 14px;
+}
+.NodeRules .rule {
+  display:inline-block;
+}
+.NodeRules .predicateGroupOperator {
+    background: #efefef;
+    color: #717171;
+    padding: 0px 4px;
+    border-radius: 4px;
+    font-family: monospace;
+    display: inline-block;
+}
+.NodeRules .messageTitle {
+  margin-bottom: 5px; display: block;
+  text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
+
+}
+
+.NodeRules u {
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition:all 0.2s ease-in-out; 
+  white-space:nowrap;
+}
+
+.NodeIcon.trigger {
+      background: #ffd45c5c;
+    color: #bd9a37;
+}
+.NodeIcon.action {
+background: #74b1fd5c;
+    color: #2d6ebf;
+}
+.NodeIcon.extra {
+  background: #8276e457;
+  color: #8276e4;
+}
+
+.NodeIcon.playbook {
+    background: #459f2f38;
+    color: #459f2f
+  }
+
+  .NodeRules.playbook u {
+    border-bottom: 2px solid #459f2f;
+}
+
+.NodeRules.delay u {
+    border-bottom: 2px solid #9385fc;
+}
+
+.NodeRules.trigger u {
+    border-bottom: 2px solid #b78e1b;
+}
+.NodeRules.trigger u:hover {
+  background:#fff0c473;
+}
+.NodeRules.action u {   border-bottom: 2px solid #2d6ebf;}
+.NodeRules.action u:hover {
+  background: #cde3fe38;
+}
+.NodeIcon svg {
+width: 16px; height: 16px; transform: translate(2px,2px);
+}
+
+.NodeText {
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.react-flow__edge-text {
+font-family: monospace;
+    text-transform: uppercase;
+    font-size:14px;
+}
+  
+
+
+.react-flow__node:hover > .NodeActionTextTop {
+  opacity: 1;
+}
+.react-flow__node:hover > .NodeActionTextBottom {
+  opacity: 1;
+}
+
+
+.NodeActionTextTop {
+  position: absolute; transform: translateY(-50%); left: 320px; top: 20%; text-align: left; font-family: monospace; text-transform: uppercase; font-size: 14px; font-weight: 200;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+.NodeActionTextBottom {
+  position: absolute;
+   transform: translateY(-50%);
+    left: 320px;
+  width: 100%;
+     top: 80%;
+      text-align: left;
+       font-family: monospace;
+        text-transform: uppercase;
+         font-size: 14px;
+          font-weight: 200;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.asideNodeOpen {
+  overflow: auto;
+  width: 1050px;
+    position: absolute;
+    top: 48px;
+    background: white;
+    height: calc(100% - 48px);
+    z-index: 10;
+    box-shadow:0 20px 20px 1px rgba(0,0,0,.2)!important;
+    margin: 0px;
+        right: -100px;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 0s;
+    opacity: 0;
+}
+
+@-webkit-keyframes slide {
+    100% { right: 0; opacity:1 }
+}
+
+@keyframes slide {
+    100% { right: 0; opacity:1}
+}
+
+.asideNodeOpen .container {
+  padding:20px;
+}
+
+.asideNodeOpen .accordionExpand {
+  transition: all 0.2s ease-in-out;
+  /*box-shadow: 0 0 10px 1px transparent;*/
+  box-shadow: 0 0 0px 1px rgb(117 117 117 / 8%);
+  padding: 10px 0px;
+}
+.accordionExpand .MuiButtonBase-root:hover:active::after{
+  background:white;
+}
+
+.asideNodeOpen .accordionExpand:hover, .asideNodeOpen .accordionExpand.Mui-expanded {
+  box-shadow:  0 0 10px 1px rgb(0 0 0 / 8%)
+}
+
+.asideNodeOpen .header {
+  padding:20px;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 4%);
+}
+
+.asideNodeOpen .accordionTitle {
+  font-size:18px;
+  font-weight:600;
+}
+
+.asideNodeOpen .titleOfNode {
+      margin-left: 10px;
+      font-size: 24px;
+    font-weight: 600;
+    border: 0px;
+    border-bottom: 2px dashed transparent;  
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+}
+.asideNodeOpen .titleOfNode:focus {
+  outline: none;
+    border-bottom: 2px dashed #e2e2e2;
+}
+.asideNodeOpen .titleOfNode:hover {
+    border-bottom: 2px dashed #e2e2e2;
+}
+
+.predicateUsersTable {
+  margin-top: 20px;
+border-spacing: 0;
+    width: 100%;
+    line-height: 20px;
+    font-size: 14px;
+    color: #222;
+}
+.predicateUsersTable thead {
+  color: #737376;
+}
+
+.predicateUsersTable tr {
+}
+
+.predicateUsersTable th {
+  padding: 10px 0px;
+  position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 20%);
+    text-align: left;
+    font-weight: 500;
+    white-space: nowrap;
+    vertical-align: bottom;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    outline: 0;
+}
+
+.predicateUsersTable td {
+      outline: 0;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 10%);
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+        padding: 10px 0px;
+}
+
+.predicateUsersTable img {
+      max-width: 32px;
+    max-height: 32px;
+    border-radius: 50%;
+}
+
+.dndnode {
+  background: white;
+    border: 1px solid rgb(230 230 230);
+    border-radius: 4px;
+    padding: 10px;
+    transition: box-shadow 0.2s ease-in-out;
+    cursor: grab;
+}
+
+.dndnode span {
+  display: inline-block;
+    position: relative;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.titleOfDnd {
+      margin-bottom: 15px;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.editorMenu {
+      justify-content: space-between;
+  padding: 20px;
+    margin: -16px;
+    background: #f1f1f1;
+    flex-direction: row;
+    display:flex;
+    align-items: center;
+margin-bottom: 5px;
+}
+.editorMenu p{
+  margin: 0px;
+}
+
+.editorMenu .buttonsSide {
+    flex-direction: row;
+    display:flex;
+}
+
+.editorMenu .MuiButton-containedSecondary{
+      color: #292828;
+    background-color: #fafafa;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 18%), 0px 2px 2px 0px rgb(0 0 0 / 0%), 0px 1px 5px 0px rgb(0 0 0 / 0%);
+}
+
+.editorMenu .MuiButton-containedSecondary:hover {
+  background-color: #f1f1f1;
+}
+
+.react-flow__edge-textbg {
+  fill: #f5f6fa !important;
+}
+
+.react-flow__edge-path {
+    stroke: #d6d6d6;
+    stroke-width: 5;
+}
+
+.nodeStats {
+   width: 100%;
+    /* height: 20px; */
+    position: absolute;
+    margin: -20px;
+    background: #9385fc26;
+    padding: 10px;
+    top: -20px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.react-flow__node:hover > .nodeStats {
+  opacity:1;
+}

@@ -1,0 +1,37 @@
+.text-editor {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.ql-editor {
+    padding: 0px;
+}
+
+.ql-toolbar.ql-snow {
+    margin-left: -40px;
+    border: 0px;
+    background: white;
+border-bottom: 1px solid #d0d0d0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: 20px;
+
+        display: none;
+    top: 25px;
+    position: absolute;
+
+    width: 595px;
+    border-bottom-color: #9385fc;
+    background: rgb(235, 232, 255);
+}
+.ql-container.ql-snow {
+    border: 0px;
+}
+
+pre {
+        white-space: break-spaces;
+}
+
+.editingArea {
+    all:unset;
+}

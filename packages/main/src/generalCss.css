@@ -1,0 +1,165 @@
+body {
+}
+
+.fullWidthContainer .container,
+.fullWidthContainer .container div:first-child {
+   /* max-width: 1342px;*/
+} 
+
+.containedtooltip {
+    width: 350px;
+}
+
+.stamp {
+    box-sizing: border-box;
+    height: 20px;
+    padding: 0 8px;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 500;
+    border: 1px solid;
+    vertical-align: bottom;
+    border-radius: 4px;
+        line-height: 20px;
+    font-size: 14px;
+}
+.stamp.draft {
+    background-color: #e8e8e8;
+    border-color: #e8e8e8;
+    color: #737376;
+}
+.stamp.live {
+    background-color: #d7efdc;
+    border-color: #d7efdc;
+    color: #0f8a40
+}
+.stamp.scheduled {
+    background-color: #feedaf;
+    border-color: #feedaf;
+    color: #6f5502
+}
+
+.miniIcon {
+        color: gray;
+    position: relative;
+    top: 3px;
+    left: 5px;
+    float: right;
+}
+
+footer {
+    display:none;
+}
+
+.noOverflow {
+    overflow-y: hidden;
+}
+
+.editAttributeTitleText {
+    color: rgb(111, 116, 136); font-size: 0.75rem; font-weight: 600; padding: 0px; margin: 0px; border: none;
+    height: unset;
+}
+
+.editAttributeTitleText::placeholder {
+
+    color: rgb(205, 205, 205);
+}
+
+
+.activityTitle {
+        font-size: 13px;
+        font-weight: 500;
+        /* border-bottom: 1px solid #eaeaea; */
+        display: block;
+        width: 100%;
+        padding: 15px;
+        margin: -15px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    
+    }
+    
+    .activityItem {
+      padding: 10px 0px;
+      cursor:pointer;
+        border-top: 1px solid #eaeaea;
+        display: flex;
+        width: 100%;
+        font-size: 15px;
+        align-content: center;
+        align-items: center;
+    }
+    .activityItem:hover {
+        background-color: #f5f4ff;
+    }
+    
+    .activityItem:last-of-type {
+      border-bottom-color: transparent;
+    }
+    
+    .activityTitle + .activityItem {
+      border-top-color: transparent;
+      }
+    
+      .activityExpandedContainer {
+        padding: 10px;
+        margin-left: 10px;
+        background: #f8f8f8;
+        border-top: 1px solid #eaeaea;
+        border-left: 1px solid #eaeaea;
+        border-right: 1px solid #eaeaea;
+      }
+
+    .activityExpandedContainer .itemExpanded {
+        display: flex;
+    align-items: center;
+    padding: 5px;
+    }
+
+    .dot {
+        width: 8px;
+        height: 8px;
+        margin-left:10px;
+        margin-right:10px;
+        border-radius: 50%;
+    }
+    .dot.event {
+          background: #0072ff;
+    }
+    .dot.pageview {
+          background: #cecece;
+    }
+    .dot.campaign {
+      background: #e88cff;
+    }
+    .dot.campaign.delivered {
+      background: #b43cd2;
+    }
+
+    .dot.campaign.tourStep {
+      background: #efb1ff;
+    }
+
+    .attributeItem:last-child {
+    border-bottom: transparent !important;
+    margin-bottom: 0px !important;
+    padding-bottom: 0px !important;
+    }
+
+    .sidebar.slack {
+        width: 500px;
+    }
+    .sidebar.slack .sideBarNodeNameInput {
+        width: 200px;
+    }
+    .sidebar.slack .diContainer {
+        display: none;
+    }
+
+    .sidebar.delay {
+        width: 500px;
+    }
+    .sidebar.delay .sideBarNodeNameInput {
+        width: 200px;
+    }
